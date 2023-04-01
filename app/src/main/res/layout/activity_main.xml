@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/viewContent"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/teal_700"
+  tools:context=".ui.view.MainActivity">
+
+    <TextView
+      android:id="@+id/tvInfo1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="84dp"
+      android:gravity="center"
+      android:padding="16dp"
+      android:text="Nombre:"
+      android:textColor="@color/white"
+      android:textSize="24sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/tvDni"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="25dp"
+      android:gravity="center"
+      android:padding="16dp"
+      android:textColor="@color/white"
+      android:textSize="24sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvInfo3" />
+
+    <TextView
+      android:id="@+id/tvInfo2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="25dp"
+      android:gravity="center"
+      android:padding="16dp"
+      android:text="Apellido:"
+      android:textColor="@color/white"
+      android:textSize="24sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+      android:id="@+id/tvName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="25dp"
+      android:gravity="center"
+      android:padding="16dp"
+      android:textColor="@color/white"
+      android:textSize="24sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvInfo1" />
+
+    <TextView
+      android:id="@+id/tvApellido"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="25dp"
+      android:gravity="center"
+      android:padding="16dp"
+      android:textColor="@color/white"
+      android:textSize="24sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvInfo2" />
+
+    <TextView
+      android:id="@+id/tvInfo3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="32dp"
+      android:layout_marginTop="25dp"
+      android:gravity="center"
+      android:padding="16dp"
+      android:text="Dni:"
+      android:textColor="@color/white"
+      android:textSize="24sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvApellido" />
+
+    <ProgressBar
+      android:id="@+id/progress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:visibility="visible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Usuario Random"
+      android:textColor="#FAFAFA"
+      android:textSize="30dp"
+      tools:layout_editor_absoluteX="172dp"
+      tools:layout_editor_absoluteY="29dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
